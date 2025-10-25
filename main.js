@@ -53,4 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // and handle the arrow button clicks/automatic rotation.
 
     console.log("Professional website scripts initialized.");
-});s
+});
+
+    const icons = document.querySelectorAll('.icon-box');
+    icons.forEach(icon => {
+      icon.addEventListener('mouseenter', () => {
+        icon.style.color = '#000';
+      });
+      icon.addEventListener('mouseleave', () => {
+        icon.style.color = '';
+      });
+    });
